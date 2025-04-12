@@ -2,11 +2,12 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 0%;
-    background-color: aliceblue;
+    background-color: gray;
 }
 
 div.main {
     background-color: rgb(42, 42, 42);
+    height: 2000px;
 }
 
 div.Heading {
@@ -18,8 +19,13 @@ div.Heading {
     
 }
 
+div.navbar{
+    position: fixed;
+    width: 90%;
+}
+
 div.Header {
-    position:static;
+    padding-left: 5%;
     display: inline-block;
     margin-left: 5%;
     margin-right: 5%;
@@ -32,5 +38,9 @@ div.Header {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 3px;
-    ;
+}
+
+div.Header:hover {
+    color: rgb(90, 181, 206);
+    font-size: 32px;
 }
