@@ -18,12 +18,13 @@ div.Heading {
 	height: 300px;
 	color: white;
 	text-align: center;
-    z-index: 2;
+    z-index: 0;
 }
 
 div.navbar {
 	position: fixed;
 	width: 90%;
+	z-index: 999;
 }
 
 span.Header {
@@ -58,11 +59,22 @@ div.background {
     margin-bottom: 0%;
     opacity: 70%;
     filter: blur(3px);
-    z-index: -1;
+    z-index: -2;
+}
+
+@media (max-width: 1292px) {
+	div.background {
+		height: 100px;
+	}
+}
+
+@media (max-width: 522px) {
+	div.background {
+		height: 120px;
+	}
 }
 
 /*Home Section*/
-
 h1 {
 	color: aliceblue;
 	margin-left: 12%;
@@ -70,35 +82,38 @@ h1 {
 	min-width: 400px;
 	font-size: 48px;
 	text-align: center;
-	flex: 1;
-}
-
-div.Home {
-	display: flex;
+  }
+  
+  div.Home {
+	display: flex; /* Use flexbox for larger screens */
 	align-items: center;
 	gap: 5px;
-	flex-wrap: nowrap;
-}
-
-img.meimg {
-	width: 400px;
+	z-index: -2;
+  }
+  
+  img.meimg {
 	border-radius: 100px;
 	z-index: 0;
 	vertical-align: middle;
 	margin-right: 5%;
-}
-
-/* Media query for small screens */
-@media (max-width: 1000px) {
-  .Home {
-    display: block; /* Stack items vertically */
-	background-color: yellow;
-	flex-wrap: wrap;
+	margin-left: 5%;
+	min-width: 400px;
   }
-
-  img.meimg {
-    margin-top: 10px; /* Add spacing above the image */
-	width: 100%;
-	background-color: yellowgreen;
+  
+  /* Media query for small screens */
+  @media (max-width: 1150px) {
+	.Home {
+	  display: block; /* Force block layout */
+	  flex-direction: column;
+	}
+  
+	h1 {
+	  margin: auto; /* Center the text when stacked */
+	}
+  
+	img.meimg {
+	  margin-top: 10px; /* Add spacing above the image */
+	  display: block; /* Ensure the image stacks below */
+	  width: 400px; /* Fixed width */
+	}
   }
-}
