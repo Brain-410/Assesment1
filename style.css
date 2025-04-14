@@ -49,6 +49,8 @@ span.Header:hover {
     color: rgb(90, 181, 206);
     font-size: 32px;
 }
+
+
 div.background {
     top: 2%;
     background-color: black;
@@ -101,7 +103,7 @@ h1 {
   }
   
   /* Media query for small screens */
-  @media (max-width: 1150px) {
+  @media (max-width: 1225px) {
 	.Home {
 	  display: block; /* Force block layout */
 	  flex-direction: column;
