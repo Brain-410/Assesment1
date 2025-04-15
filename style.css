@@ -129,12 +129,13 @@ h1 {
 div.About_Me {
 	display: block;
 	margin-top: 40px;
-	padding-top: 40px;;
+	padding-top: 40px;
+	padding-bottom: 8%;
+
 	padding-left: 20%;
 	padding-right: 20%;
 	text-align: center;
 
-	height: 500px;
 	background-color: rgb(33, 34, 40);
 	--mask:
 		radial-gradient(37.17px at 50% 52.5px,#000 99%,#0000 101%) calc(50% - 50px) 0/100px 51% repeat-x,
