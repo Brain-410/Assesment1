@@ -3,6 +3,7 @@ body {
 	margin-right: 5%;
 	margin-top: 0%;
 	background-color: gray;
+	font-family: system-ui;
 }
 
 /*Header Section*/
@@ -91,7 +92,7 @@ h1 {
 	align-items: center;
 	gap: 5px;
 	z-index: 1;
-	position: absolute;
+	position: relative;
 	margin-right: 8%;
 	margin-top: -10%;
   }
@@ -121,3 +122,36 @@ h1 {
 	  width: 400px;
 	}
   }
+
+
+/* About Me Section */
+
+div.About_Me {
+	display: block;
+	margin-top: 40px;
+	padding-top: 40px;;
+	padding-left: 20%;
+	padding-right: 20%;
+	text-align: center;
+
+	height: 500px;
+	background-color: rgb(33, 34, 40);
+	--mask:
+		radial-gradient(37.17px at 50% 52.5px,#000 99%,#0000 101%) calc(50% - 50px) 0/100px 51% repeat-x,
+		radial-gradient(37.17px at 50% -27.5px,#0000 99%,#000 101%) 50% 25px/100px calc(51% - 25px) repeat-x,
+		radial-gradient(37.17px at 50% calc(100% - 52.5px),#000 99%,#0000 101%) calc(50% - 50px) 100%/100px 51% repeat-x,
+		radial-gradient(37.17px at 50% calc(100% + 27.5px),#0000 99%,#000 101%) 50% calc(100% - 25px)/100px calc(51% - 25px) repeat-x;
+		-webkit-mask: var(--mask);
+			mask: var(--mask);
+}
+
+h1.About_Me_Header {
+	text-decoration: underline;
+	color: white;
+	text-align: center;
+}
+
+span.About_Me_Text {
+	color: white;
+	font-size: 32px;
+}
