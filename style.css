@@ -87,10 +87,13 @@ h1 {
   }
   
   div.Home {
-	display: flex; /* Use flexbox for larger screens */
+	display: flex;
 	align-items: center;
 	gap: 5px;
-	z-index: -2;
+	z-index: 1;
+	position: absolute;
+	margin-right: 8%;
+	margin-top: -10%;
   }
   
   img.meimg {
@@ -102,20 +105,19 @@ h1 {
 	min-width: 400px;
   }
   
-  /* Media query for small screens */
   @media (max-width: 1225px) {
 	.Home {
-	  display: block; /* Force block layout */
+	  display: block;
 	  flex-direction: column;
 	}
   
 	h1 {
-	  margin: auto; /* Center the text when stacked */
+	  margin: auto;
 	}
-  
+
 	img.meimg {
-	  margin-top: 10px; /* Add spacing above the image */
-	  display: block; /* Ensure the image stacks below */
-	  width: 400px; /* Fixed width */
+	  margin-top: 10px;
+	  display: block;
+	  width: 400px;
 	}
   }
