@@ -19,7 +19,7 @@ div.Heading {
 	height: 300px;
 	color: white;
 	text-align: center;
-    z-index: 0;
+	z-index: 0;
 }
 
 div.navbar {
@@ -31,10 +31,10 @@ div.navbar {
 span.Header {
 	padding-left: 5%;
 	display: inline-block;
-    margin-top: 2%;
+	margin-top: 2%;
 	margin-left: 5%;
 	margin-right: 5%;
-    margin-bottom: 0%;
+	margin-bottom: 0%;
 	text-decoration: underline;
 	font-weight: bold;
 	font-size: 24px;
@@ -43,26 +43,25 @@ span.Header {
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 3px;
-    transition: 0.3s;
+	transition: 0.3s;
 }
 
 span.Header:hover {
-    color: rgb(90, 181, 206);
-    font-size: 32px;
+	color: rgb(90, 181, 206);
+	font-size: 32px;
 }
 
-
 div.background {
-    top: 2%;
-    background-color: black;
-    height: 75px;
-    width: 90%;
-    position: fixed;
-    opacity: 70%;
-    margin-bottom: 0%;
-    opacity: 70%;
-    filter: blur(3px);
-    z-index: -2;
+	top: 2%;
+	background-color: black;
+	height: 75px;
+	width: 90%;
+	position: fixed;
+	opacity: 70%;
+	margin-bottom: 0%;
+	opacity: 70%;
+	filter: blur(3px);
+	z-index: -2;
 }
 
 @media (max-width: 1292px) {
@@ -78,16 +77,16 @@ div.background {
 }
 
 /*Home Section*/
-h1 {
+h1.Home_Header {
 	color: aliceblue;
 	margin-left: 12%;
 	margin-right: 10%;
 	min-width: 400px;
 	font-size: 48px;
 	text-align: center;
-  }
-  
-  div.Home {
+}
+
+div.Home {
 	display: flex;
 	align-items: center;
 	gap: 5px;
@@ -95,38 +94,38 @@ h1 {
 	position: relative;
 	margin-right: 8%;
 	margin-top: -10%;
-  }
-  
-  img.meimg {
+}
+
+img.meimg {
 	border-radius: 100px;
 	z-index: 0;
 	vertical-align: middle;
 	margin-right: 5%;
 	margin-left: 5%;
 	min-width: 400px;
-  }
-  
-  @media (max-width: 1225px) {
+}
+
+@media (max-width: 1225px) {
 	.Home {
-	  display: block;
-	  flex-direction: column;
+		display: block;
+		flex-direction: column;
 	}
-  
+
 	h1 {
-	  margin: auto;
+		margin: auto;
 	}
 
 	img.meimg {
-	  margin-top: 10px;
-	  display: block;
-	  width: 400px;
+		margin-top: 10px;
+		display: block;
+		width: 400px;
 	}
-  }
-
+}
 
 /* About Me Section */
 
 div.About_Me {
+	scroll-margin-top: 30px;
 	display: block;
 	margin-top: 40px;
 	padding-top: 40px;
@@ -137,13 +136,24 @@ div.About_Me {
 	text-align: center;
 
 	background-color: rgb(33, 34, 40);
-	--mask:
-		radial-gradient(37.17px at 50% 52.5px,#000 99%,#0000 101%) calc(50% - 50px) 0/100px 51% repeat-x,
-		radial-gradient(37.17px at 50% -27.5px,#0000 99%,#000 101%) 50% 25px/100px calc(51% - 25px) repeat-x,
-		radial-gradient(37.17px at 50% calc(100% - 52.5px),#000 99%,#0000 101%) calc(50% - 50px) 100%/100px 51% repeat-x,
-		radial-gradient(37.17px at 50% calc(100% + 27.5px),#0000 99%,#000 101%) 50% calc(100% - 25px)/100px calc(51% - 25px) repeat-x;
-		-webkit-mask: var(--mask);
-			mask: var(--mask);
+	--mask: radial-gradient(37.17px at 50% 52.5px, #000 99%, #0000 101%)
+			calc(50% - 50px) 0/100px 51% repeat-x,
+		radial-gradient(37.17px at 50% -27.5px, #0000 99%, #000 101%) 50% 25px/100px
+			calc(51% - 25px) repeat-x,
+		radial-gradient(
+				37.17px at 50% calc(100% - 52.5px),
+				#000 99%,
+				#0000 101%
+			)
+			calc(50% - 50px) 100%/100px 51% repeat-x,
+		radial-gradient(
+				37.17px at 50% calc(100% + 27.5px),
+				#0000 99%,
+				#000 101%
+			)
+			50% calc(100% - 25px) / 100px calc(51% - 25px) repeat-x;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
 }
 
 h1.About_Me_Header {
@@ -155,4 +165,20 @@ h1.About_Me_Header {
 span.About_Me_Text {
 	color: white;
 	font-size: 32px;
+}
+
+
+/*My Skills*/
+div.My_Skills {
+	color: white;
+
+}
+
+
+h1.My_Skills_Header {
+	color: aliceblue;
+	min-width: 400px;
+	font-size: 48;
+	text-align: center;
+	text-decoration: underline;
 }
