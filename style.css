@@ -3,14 +3,15 @@ body {
 	margin-right: 5%;
 	margin-top: 0%;
 	background-color: gray;
-	font-family: system-ui;
 }
 
 /*Header Section*/
 
 div.main {
 	background-color: rgb(42, 42, 42);
-	height: 2000px;
+	height: 3000px;
+	font-family: system-ui;
+
 }
 
 div.Heading {
@@ -125,11 +126,13 @@ img.meimg {
 /* About Me Section */
 
 div.About_Me {
-	scroll-margin-top: 30px;
+	scroll-margin-top: 40px;
+	margin-bottom: 0%;
 	display: block;
 	margin-top: 40px;
 	padding-top: 40px;
 	padding-bottom: 8%;
+	margin-bottom: 0%;
 
 	padding-left: 20%;
 	padding-right: 20%;
@@ -160,25 +163,106 @@ h1.About_Me_Header {
 	text-decoration: underline;
 	color: white;
 	text-align: center;
+	font-size: 48px;
 }
 
 span.About_Me_Text {
 	color: white;
-	font-size: 32px;
+	font-size: 36px;
 }
 
 
-/*My Skills*/
+/* My Skills Section */
 div.My_Skills {
 	color: white;
-
+	scroll-margin-top: 50px;
+	margin-top: 0%;
+	padding-bottom: 8%;
+	padding-top: 2%;
+	align-items: center;
+	
 }
 
+div.My_Skills_Text {
+	display: flex;
+}
 
 h1.My_Skills_Header {
 	color: aliceblue;
 	min-width: 400px;
-	font-size: 48;
+	font-size: 48px;
 	text-align: center;
 	text-decoration: underline;
+	font-weight: bold;
+}
+
+div.My_Skills_Textbox1 {
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: fit-content;
+	font-size: 36px;
+	display: inline;
+}
+
+div.My_Skills_Textbox2 {
+	font-size: 36px;
+	margin-top: 80px;
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+	width: fit-content;
+
+}
+
+@media (max-width: 850px) {
+	div.My_Skills_Textbox1 {
+		display: block;
+	}
+
+	div.My_Skills_Textbox2 {
+		display: block;
+	}
+
+	div.My_Skills_Text {
+		display: block;
+	}
+}
+
+li {
+	transform: translate(75px);
+}
+
+/* Projects Section */
+
+div.Projects {
+	padding-top: 40px;
+	scroll-margin-top: 50px;
+	background-color: rgb(33, 34, 40);
+	height: 1000px;
+	--mask: radial-gradient(37.17px at 50% 52.5px, #000 99%, #0000 101%)
+			calc(50% - 50px) 0/100px 51% repeat-x,
+		radial-gradient(37.17px at 50% -27.5px, #0000 99%, #000 101%) 50% 25px/100px
+			calc(51% - 25px) repeat-x,
+		radial-gradient(
+				37.17px at 50% calc(100% - 52.5px),
+				#000 99%,
+				#0000 101%
+			)
+			calc(50% - 50px) 100%/100px 51% repeat-x,
+		radial-gradient(
+				37.17px at 50% calc(100% + 27.5px),
+				#0000 99%,
+				#000 101%
+			)
+			50% calc(100% - 25px) / 100px calc(51% - 25px) repeat-x;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
+}
+
+h1.Projects_Header {
+	color: white;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 48px;
 }
