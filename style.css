@@ -9,11 +9,16 @@ div.main {
 	background-color: rgb(42, 42, 42);
 	height: 3000px;
 	font-family: system-ui;
+
+}
+
+div.main_body {
+	animation: myAnim 1s ease-out 0s 1 normal forwards;
 }
 
 div.Heading {
 	background-image: linear-gradient(black, rgb(42, 42, 42));
-	width: 100%;
+	width: fit-content;
 	height: 300px;
 	color: white;
 	text-align: center;
@@ -22,16 +27,17 @@ div.Heading {
 
 div.navbar {
 	position: fixed;
-	width: 100%;
+	width: 60%;
 	height: fit-content;
 	z-index: 999;
+	margin-left: 20%;
 }
 
 span.Header {
 	padding-left: 5%;
 	display: inline-block;
-	margin-top: 2%;
-	margin-left: 5%;
+	margin-top: 20px;
+	margin-left: 0%;
 	margin-right: 5%;
 	margin-bottom: 0%;
 	text-decoration: underline;
@@ -52,10 +58,10 @@ span.Header:hover {
 
 div.background {
 	align-items: center;
-	top: 0%;
+	top: -1%;
 	background-color: black;
 	height: 75px;
-	width: 80%;
+	width: 60%;
 	margin-left: 10%;
 	margin-top: 20px;
 	position: fixed;
@@ -65,19 +71,23 @@ div.background {
 	filter: blur(3px);
 	z-index: -2;
 	backdrop-filter: blur(6px);
+	border-radius: 40px;
+	transform: translate(-20%, 0);
 }
 
-@media (max-width: 1292px) {
+@media (max-width: 1626px) {
 	div.background {
-		height: 100px;
+		height: 110px;
 	}
 }
 
-@media (max-width: 522px) {
+@media (max-width: 908px) {
 	div.background {
-		height: 120px;
+		height: 165px;
 	}
 }
+
+
 
 /*Home Section*/
 h1.Home_Header {
@@ -87,6 +97,7 @@ h1.Home_Header {
 	min-width: 400px;
 	font-size: 48px;
 	text-align: center;
+	vertical-align: middle;
 }
 
 div.Home {
@@ -123,6 +134,33 @@ img.meimg {
 		display: block;
 		width: 400px;
 	}
+}
+
+img.github_image {
+	width: 80px;
+	border-radius: 25%;
+	display: inline-block;
+}
+
+a.resume {
+	color: aliceblue;
+	font-size: 24px;
+	text-align: center;
+	transform: translate(0, -30px);
+	display: inline-block;
+	margin-left: 20px;
+	background-color: rgb(33, 34, 40);
+	padding: 10px;
+	border-radius: 20px;
+	box-shadow: 4px 4px 5px black;
+	transition: 0.3s;
+}
+
+
+a.resume:hover {
+	scale: 110%;
+	transform: translate(0, -25px);
+	box-shadow: 2px 2px 1px black;
 }
 
 /* About Me Section */
@@ -198,7 +236,7 @@ h1.My_Skills_Header {
 
 div.My_Skills_Textbox1 {
 	margin-top: 80px;
-	margin-left: auto;
+	margin-left: 25%;
 	margin-right: auto;
 	max-width: fit-content;
 	font-size: 36px;
@@ -210,7 +248,7 @@ div.My_Skills_Textbox2 {
 	margin-top: 80px;
 	display: inline;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: 25%;
 	width: fit-content;
 }
 
@@ -230,6 +268,35 @@ div.My_Skills_Textbox2 {
 
 li {
 	transform: translate(75px);
+}
+
+div.experience {
+	display: block;
+	text-align: center;
+	margin-top: 3%;
+	width: 60%;
+	margin-left: 20%;
+	border: 10px groove rgb(53, 56, 56);
+	background-color: rgb(33, 34, 40);
+}
+
+h1.experience {
+	color: aliceblue;
+	font-size: 36px;
+	border-bottom: 5px groove rgb(53, 56, 56);
+	border-left: 5px groove rgb(53, 56, 56);
+	border-right: 5px groove rgb(53, 56, 56);
+	margin-top: 0%;
+	width: 30%;
+	margin-left: 35%;
+	text-decoration: underline;
+}
+
+p.experience {
+	font-size: 32px;
+	text-align: center;
+	width: 90%;
+	margin-left: 5%;
 }
 
 /* Projects Section */
@@ -290,7 +357,6 @@ span.Project_odd_Text {
 	width: 80%;
 	margin-right: 10%;
 	text-align: center;
-	min-width: 600px;
 }
 
 @media (max-width: 1425px) {
@@ -301,10 +367,11 @@ span.Project_odd_Text {
 
 	span.Project_odd_Text {
 		margin: auto;
+		margin-bottom: 0px;
+		margin-top: 0px;
 	}
 
 	img.Project_odd_Image {
-		margin-top: 100px;
 		margin-bottom: 100px;
 		margin-left: 0%;
 		display: block;
@@ -334,7 +401,6 @@ span.Project_even_Text {
 	margin-left: 10%;
 	width: 80%;
 	text-align: center;
-	min-width: 600px;
 }
 
 @media (max-width: 1425px) {
@@ -345,11 +411,12 @@ span.Project_even_Text {
 
 	span.Project_even_Text {
 		margin: auto;
+		margin-top: 0px;
 	}
 
 	img.Project_even_Image {
-		margin-top: 100px;
-		margin-bottom: 100px;
+		margin-top: 120px;
+		margin-bottom: 0px;
 		margin-left: 0%;
 		margin-right: 0%;
 		display: block;
@@ -361,6 +428,15 @@ h2.title {
 	font-size: 48px;
 	text-align: center;
 	text-decoration: underline;
+}
+
+
+div.My_Skills_Textbox1.in-view {
+	animation: myAnim3 1s ease-out 0s 1 normal forwards;
+}
+
+div.My_Skills_Textbox2.in-view {
+	animation: myAnim2 1s ease-out 0s 1 normal forwards;
 }
 
 .in-view {
@@ -379,6 +455,113 @@ h2.title {
 	}
 }
 
+
+
+
+@keyframes myAnim2 {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes myAnim3 {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
 .not-in-view {
 	opacity: 0;
 }
+
+/* Contact Section */
+
+div.contact_me {
+	padding-bottom: 50px;
+}
+
+div.contact_body {
+	display: flex;
+}
+
+h1.contact_header {
+	color: white;
+	text-align: center;
+	font-size: 48px;
+	text-decoration: underline;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+}
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid rgb(33, 34, 40);
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	
+	resize: none;
+	background-color: rgb(57, 58, 66);;
+	color: aliceblue;
+	display: block;
+  }
+  
+  input[type=submit] {
+	background-color: #04AA6D;
+	color: aliceblue;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+	background-color: #45a049;
+  }
+
+  textarea.message {
+	width: 100%;
+  }
+  
+  .container {
+	border: 10px groove rgb(53, 56, 56);
+	width: 35%;
+	margin-left: -5%;
+	border-radius: 5px;
+	padding: 20px;
+	background-color: rgb(42, 42, 42);
+  }
+
+  label {
+	color: aliceblue;
+  }
+
+  div.contact_text {
+	padding-top: 100px;
+	width: 50%;
+	font-size: 32px;
+	margin-left: 10%;
+	color: aliceblue;
+  }
+
+  a.gmail {
+	color: lightblue
+
+  }
+
+  a:visited {
+	color: lightblue;
+  }

@@ -18,6 +18,11 @@ document.getElementById("scroll-link4").addEventListener("click", function(event
     document.getElementById("target-section4").scrollIntoView({ behavior: "smooth" });
 });
 
+document.getElementById("scroll-link5").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("target-section5").scrollIntoView({ behavior: "smooth" });
+});
+
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -34,8 +39,9 @@ const observer = new IntersectionObserver((entries) => {
     threshold: [0, 0.1, 1]
 })
 
-const tags = document.querySelectorAll("div.Project_odd, div.Project_even, h2.title")
+const tags = document.querySelectorAll("div.Project_1, div.Project_2, div.Project_3, div.Project_4, div.Project_5, div.Project_6, div.experience, div.My_Skills_Textbox1, div.My_Skills_Textbox2")
 
 tags.forEach((tag) => {
     observer.observe(tag)
 })
+
