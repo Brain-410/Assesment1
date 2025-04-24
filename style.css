@@ -348,8 +348,11 @@ div.Project_odd {
 
 img.Project_odd_Image {
 	border-radius: 35%;
-	margin-left: 20%;
 	scale: 200%;
+}
+
+a.Project_odd_Image {
+	margin-left: 20%;
 }
 
 span.Project_odd_Text {
@@ -391,9 +394,12 @@ div.Project_even {
 }
 
 img.Project_even_Image {
-	margin-left: 20%;
 	border-radius: 35%;
-	scale: 200%;
+	margin-right: 20%;
+}
+
+a.Project_even_Image {
+	margin-left: 20%;
 	margin-right: 20%;
 }
 
