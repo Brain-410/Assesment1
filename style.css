@@ -9,7 +9,6 @@ div.main {
 	background-color: rgb(42, 42, 42);
 	height: 3000px;
 	font-family: system-ui;
-
 }
 
 div.main_body {
@@ -53,7 +52,7 @@ span.Header {
 
 span.Header:hover {
 	color: rgb(90, 181, 206);
-	font-size: 32px;
+	scale: 120%
 }
 
 div.background {
@@ -86,8 +85,6 @@ div.background {
 		height: 165px;
 	}
 }
-
-
 
 /*Home Section*/
 h1.Home_Header {
@@ -140,6 +137,11 @@ img.github_image {
 	width: 80px;
 	border-radius: 25%;
 	display: inline-block;
+	transition: 0.3s;
+}
+
+img.github_image:hover {
+	scale: 115%
 }
 
 a.resume {
@@ -155,7 +157,6 @@ a.resume {
 	box-shadow: 4px 4px 5px black;
 	transition: 0.3s;
 }
-
 
 a.resume:hover {
 	scale: 110%;
@@ -347,12 +348,31 @@ div.Project_odd {
 }
 
 img.Project_odd_Image {
-	border-radius: 35%;
+	border-radius: 35% 35% 0% 0%;
 	scale: 200%;
 }
 
 a.Project_odd_Image {
 	margin-left: 20%;
+	position: relative;
+	text-align: center;
+	color: white;
+	transition: 0.3s;
+}
+
+a.Project_odd_Image:hover {
+	opacity: 85%;
+	scale: 105%
+}
+
+div.Project_odd_Image {
+	color: white;
+	background-color: #04aa6d;
+	width: 200%;
+	position: absolute;
+	bottom: -32.6%;
+	left: 50%;
+	transform: translate(-50%, 150%);
 }
 
 span.Project_odd_Text {
@@ -400,7 +420,27 @@ img.Project_even_Image {
 
 a.Project_even_Image {
 	margin-left: 20%;
+	position: relative;
+	text-align: center;
+	color: white;
 	margin-right: 20%;
+	transition: 0.3s;
+}
+
+a.Project_even_Image:hover {
+	opacity: 85%;
+	scale: 105%
+}
+
+div.Project_even_Image {
+	color: white;
+	background-color: #04aa6d;
+	width: 200%;
+	position: absolute;
+	text-align: center;
+	bottom: -32.6%;
+	left: 50%;
+	transform: translate(-50%, 150%);
 }
 
 span.Project_even_Text {
@@ -436,7 +476,6 @@ h2.title {
 	text-decoration: underline;
 }
 
-
 div.My_Skills_Textbox1.in-view {
 	animation: myAnim3 1s ease-out 0s 1 normal forwards;
 }
@@ -460,9 +499,6 @@ div.My_Skills_Textbox2.in-view {
 		transform: translateY(0);
 	}
 }
-
-
-
 
 @keyframes myAnim2 {
 	0% {
@@ -510,7 +546,9 @@ h1.contact_header {
 	margin-bottom: 50px;
 }
 
-input[type=text], select, textarea {
+input[type='text'],
+select,
+textarea {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid rgb(33, 34, 40);
@@ -518,56 +556,55 @@ input[type=text], select, textarea {
 	box-sizing: border-box;
 	margin-top: 6px;
 	margin-bottom: 16px;
-	
+
 	resize: none;
-	background-color: rgb(57, 58, 66);;
+	background-color: rgb(57, 58, 66);
 	color: aliceblue;
 	display: block;
-  }
-  
-  input[type=submit] {
-	background-color: #04AA6D;
+}
+
+input[type='submit'] {
+	background-color: #04aa6d;
 	color: aliceblue;
 	padding: 12px 20px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-	background-color: #45a049;
-  }
+}
 
-  textarea.message {
+input[type='submit']:hover {
+	background-color: #45a049;
+}
+
+textarea.message {
 	width: 100%;
-  }
-  
-  .container {
+}
+
+.container {
 	border: 10px groove rgb(53, 56, 56);
 	width: 35%;
 	margin-left: -5%;
 	border-radius: 5px;
 	padding: 20px;
 	background-color: rgb(42, 42, 42);
-  }
+}
 
-  label {
+label {
 	color: aliceblue;
-  }
+}
 
-  div.contact_text {
+div.contact_text {
 	padding-top: 100px;
 	width: 50%;
 	font-size: 32px;
 	margin-left: 10%;
 	color: aliceblue;
-  }
+}
 
-  a.gmail {
-	color: lightblue
-
-  }
-
-  a:visited {
+a.gmail {
 	color: lightblue;
-  }
+}
+
+a:visited {
+	color: lightblue;
+}
