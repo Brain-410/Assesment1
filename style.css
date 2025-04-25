@@ -619,3 +619,21 @@ a.gmail {
 a:visited {
 	color: lightblue;
 }
+
+@media (max-width: 1326px) {
+	div.contact_body {
+		display: block;
+	}
+
+	div.contact_text {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	div.container {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
