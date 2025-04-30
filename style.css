@@ -17,7 +17,7 @@ div.main_body {
 
 div.Heading {
 	background-image: linear-gradient(black, rgb(42, 42, 42));
-	width: fit-content;
+	width: 100%;
 	height: 300px;
 	color: white;
 	text-align: center;
@@ -41,7 +41,7 @@ span.Header {
 	margin-bottom: 0%;
 	text-decoration: underline;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 20px;
 	background: rgb(23, 23, 23);
 	border-radius: 20px;
 	padding-left: 10px;
@@ -59,7 +59,6 @@ div.background {
 	align-items: center;
 	top: -1%;
 	background-color: black;
-	height: 75px;
 	width: 60%;
 	margin-left: 10%;
 	margin-top: 20px;
@@ -72,11 +71,12 @@ div.background {
 	backdrop-filter: blur(6px);
 	border-radius: 40px;
 	transform: translate(-20%, 0);
+	height: 50px;
 }
 
-@media (max-width: 1626px) {
+@media (max-width: 1399px) {
 	div.background {
-		height: 110px;
+		height: 100px;
 	}
 }
 
@@ -201,7 +201,7 @@ div.About_Me {
 }
 
 h1.About_Me_Header {
-	text-decoration: underline;
+	
 	color: white;
 	text-align: center;
 	font-size: 48px;
@@ -231,17 +231,21 @@ h1.My_Skills_Header {
 	min-width: 400px;
 	font-size: 48px;
 	text-align: center;
-	text-decoration: underline;
+	
 	font-weight: bold;
 }
 
 div.My_Skills_Textbox1 {
 	margin-top: 80px;
-	margin-left: 25%;
+	margin-left: 15%;
 	margin-right: auto;
 	max-width: fit-content;
 	font-size: 36px;
 	display: inline;
+}
+
+p.My_Skills {
+	font-size: 48px;
 }
 
 div.My_Skills_Textbox2 {
@@ -249,7 +253,7 @@ div.My_Skills_Textbox2 {
 	margin-top: 80px;
 	display: inline;
 	margin-left: auto;
-	margin-right: 25%;
+	margin-right: 15%;
 	width: fit-content;
 }
 
@@ -290,7 +294,6 @@ h1.experience {
 	margin-top: 0%;
 	width: 40%;
 	margin-left: 30%;
-	text-decoration: underline;
 }
 
 p.experience {
@@ -330,7 +333,6 @@ div.Projects {
 h1.Projects_Header {
 	color: white;
 	text-align: center;
-	text-decoration: underline;
 	font-size: 48px;
 }
 
@@ -484,7 +486,6 @@ h2.title {
 	color: white;
 	font-size: 48px;
 	text-align: center;
-	text-decoration: underline;
 }
 
 div.My_Skills_Textbox1.in-view {
@@ -552,7 +553,6 @@ h1.contact_header {
 	color: white;
 	text-align: center;
 	font-size: 48px;
-	text-decoration: underline;
 	box-sizing: border-box;
 	margin-bottom: 50px;
 }

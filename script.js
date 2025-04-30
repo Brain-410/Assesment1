@@ -44,4 +44,3 @@ const tags = document.querySelectorAll("div.Project_1, div.Project_2, div.Projec
 tags.forEach((tag) => {
     observer.observe(tag)
 })
-
