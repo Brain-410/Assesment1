@@ -80,7 +80,7 @@ div.background {
 	}
 }
 
-@media (max-width: 908px) {
+@media (max-width: 779px) {
 	div.background {
 		height: 165px;
 	}

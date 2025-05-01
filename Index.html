@@ -59,7 +59,7 @@
 						programming both in school and as an extra-curricular.
 						My deep desire to learn has led me to develop skills in
 						various technologies such as Python, Rust, JavaScript,
-						HTML, CSS, GDScript and C#. Moreover, I enjoy working in
+						HTML, CSS, GDScript, C# and MySQL. Moreover, I enjoy working in
 						teams with like-minded individuals to create exceptional
 						applications
 					</span>
@@ -262,7 +262,8 @@
 
 						<!--Contact Form -->
 						<div class="container">
-							<form>
+							<form action="https://api.web3forms.com/submit" method="POST">
+								<input type="hidden" name="access_key" value="ea3fadfc-6f86-406d-aa91-4273b645aee5">
 								<label for="name">Name</label>
 								<input
 									type="text"
@@ -281,14 +282,13 @@
 									placeholder="John.Doe1@gmail.com"
 								/>
 
-								<label for="subject">Message</label>
-								<textarea
-									class="message"
-									id="subject"
-									name="subject"
-									placeholder="Message"
-									style="height: 200px"
-								></textarea>
+									<textarea
+										class="message"
+										id="message"
+										name="message"
+										placeholder="Message"
+										style="height: 200px"
+									></textarea>
 
 								<input type="submit" value="Submit" />
 							</form>
