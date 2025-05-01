@@ -354,6 +354,8 @@ img.Project_odd_Image {
 	scale: 200%;
 }
 
+
+
 a.Project_odd_Image {
 	margin-left: 20%;
 	position: relative;
@@ -365,6 +367,7 @@ a.Project_odd_Image {
 a.Project_odd_Image:hover {
 	opacity: 85%;
 	scale: 105%
+	
 }
 
 div.Project_odd_Image {
@@ -374,6 +377,24 @@ div.Project_odd_Image {
 	position: absolute;
 	bottom: -32.6%;
 	left: 50%;
+	transform: translate(-50%, 150%);
+}
+
+img.Gamejam {
+	scale: 100%;
+	margin-right: 10%;
+	margin-left: 20%;
+}
+
+
+div.Project_odd_Image1 {
+	color: white;
+	background-color: #04aa6d;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	bottom: 13.8%;
+	right: -70%;
 	transform: translate(-50%, 150%);
 }
 
@@ -456,8 +477,20 @@ div.Project_even_Image {
 
 span.Project_even_Text {
 	margin-left: 10%;
-	width: 80%;
 	text-align: center;
+}
+
+div.Project_2 {
+	margin-left: 5%;
+}
+
+div.Gamejam {
+	margin-left: -5%;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	margin-right: 0%;
+	transform: translate(200px, 0px);
 }
 
 @media (max-width: 1425px) {
